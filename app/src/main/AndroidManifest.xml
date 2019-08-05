@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="igrand.com.vems">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vems_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/vems_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.admin.GalleryListActivity"></activity>
+        <activity android:name=".activities.admin.AttendanceListActivity" />
+        <activity android:name=".activities.admin.MesagesListActivity" />
+        <activity android:name=".activities.admin.PermissionListActivity" />
+        <activity android:name=".activities.admin.LeavesListActivity" />
+        <activity android:name=".activities.admin.AssignmentsListActivity" />
+        <activity android:name=".activities.admin.ClassRoutinesListActivity" />
+        <activity android:name=".activities.admin.StudentsListActivity" />
+        <activity android:name=".activities.admin.TeachersListActivity" />
+        <activity android:name=".activities.admin.ClassRoutinesActivity" />
+        <activity android:name=".activities.admin.AddStudentActivity" />
+        <activity android:name=".activities.admin.AddTeacherActivty" />
+        <activity android:name=".activities.ShowGalleryImage" />
+        <activity android:name=".activities.PermissionApprovalRejectActivity" />
+        <activity android:name=".activities.admin.LeaveApprovalRejectActivity" />
+        <activity android:name=".activities.MessageApprovalRejectActivity" />
+        <activity android:name=".activities.StudentMessageActivity" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ParentDashboardActivity"
+            android:label="@string/title_activity_parent_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.TeacherDashboardActivity"
+            android:label="@string/title_activity_teacher_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PrincipalDashboardActivity"
+            android:label="@string/title_activity_principal_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:label="@string/title_activity_admin_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

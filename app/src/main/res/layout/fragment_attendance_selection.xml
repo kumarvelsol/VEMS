@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    tools:context=".dialogs.AttendanceSelectionFragment"
+    android:background="@drawable/attendance_selection_background">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+          android:gravity="center"
+           android:weightSum="1"
+           android:layout_margin="@dimen/ten_dp">
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/attendance_selection_fragment_image_student"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".5"
+               android:src="@drawable/student_attendance_icon"/>
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/attendance_selection_fragment_image_teacher"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".5"
+               android:src="@drawable/teachers_attendance_icon"/>
+
+
+       </LinearLayout>
+   </LinearLayout>
+
+</FrameLayout>

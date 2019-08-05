@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">VEMS</string>
+    <string name="login_icon_image_desc">login icon image</string>
+    <string name="login_screen_user_name_input_hint">Admin/Principal/Teacher/Parent</string>
+    <string name="login_screen_password_hint">Password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="signin_text">Sign in</string>
+    <string name="copy_right_text">&#169;2019 Venkateswara E.M School </string>
+    <string name="forgot_password_otp_confirmation_sbmit_btn_txt">Submit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password_text_login">Forgot Password?</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_principal_dashboard">PrincipalDashboardActivity</string>
+    <string name="title_activity_teacher_dashboard">TeacherDashboardActivity</string>
+    <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
+    <string name="todo">TODO</string>
+    <string name="add_teacher_full_name_hint">Full Name</string>
+    <string name="add_teacher_designation_hint">Designation</string>
+    <string name="add_teacher_input_designation_hint">Designation</string>
+    <string name="add_teacher_academic_qualification_hint">Academic Qualification</string>
+    <string name="add_teacher_professional_qualification_hint">Professional Qualification</string>
+    <string name="add_teacher_academic_mobile_hint">Mobile Number</string>
+    <string name="add_teacher_academic_aleternate_no_hint">Alternative Mobile</string>
+    <string name="add_teacher_landline_hint">LandLine Number</string>
+    <string name="add_teacher_email_hint">Email</string>
+    <string name="add_teacher_gender_hint"></string>
+    <string name="add_teacher_dob_hint">Date Of Birth</string>
+    <string name="add_teacher_present_address_hint">Present Address</string>
+    <string name="add_teacher_permenant_address_hint">Permenant Address</string>
+    <string name="add_teacher_doj_hint">Date of Joining</string>
+    <string name="add_teacher_basic_salary_hint">Basic Salary</string>
+    <string name="add_teacher_bank_name_hint">Bank Name</string>
+    <string name="add_teacher_banck_account_no_hint">Bank Account Number</string>
+    <string name="add_teacher_aadhar_hint">Aadhar</string>
+    <string name="add_teacher_blood_group_hint">Blood Group</string>
+
+    <string-array name="status">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="teacher_categories">
+        <item>PPT</item>
+        <item>PRT</item>
+        <item>TGT</item>
+    </string-array>
+    <string-array name="teacher_category_2">
+        <item>Trained</item>
+        <item>Untrained </item>
+    </string-array>
+    <string-array name="gender_category">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="add_student_streams">
+        <item>Stream</item>
+        <item>Stream1</item>
+        <item>Stream2</item>
+        <item>Stream3</item>
+    </string-array>
+    <string-array name="add_student_hint_session">
+        <item>Session</item>
+        <item>Session1</item>
+        <item>Session2</item>
+        <item>Session3</item>
+    </string-array>
+    <string-array name="add_student_class_names">
+        <item>Class Name</item>
+        <item>Class1</item>
+        <item>Class2</item>
+        <item>Class3</item>
+    </string-array>
+    <string-array name="add_student_class_timing">
+        <item>Class Timing</item>
+        <item>Class Time1</item>
+        <item>Class Time2</item>
+        <item>Class Time3</item>
+    </string-array>
+    <string-array name="add_student_gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="add_student_admission">
+        <item>Admission Category</item>
+        <item>Category1</item>
+        <item>Category2</item>
+    </string-array>
+    <string-array name="add_student_fee_categories">
+        <item>Fee Category</item>
+        <item>Category1</item>
+        <item>Category2</item>
+    </string-array>
+
+    <string-array name="student_blood_group">
+        <item>Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>Bombay</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="student_religion">
+        <item>Religion</item>
+        <item>Hindu</item>
+        <item>Muslim</item>
+        <item>Christian</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="student_caste">
+        <item>Caste</item>
+        <item>OC</item>
+        <item>BC</item>
+        <item>Others</item>
+    </string-array>
+    <string name="add_student_full_name_hint">Full Name</string>
+    <string name="add_student_hint_doj">Date of Joining</string>
+    <string name="add_student_hint_strem">Stream</string>
+    <string name="add_student_hint_session">Session</string>
+    <string name="add_student_hint_admissionNo">Admission Number</string>
+    <string name="add_student_hint_roll_no">Roll Number</string>
+    <string name="add_student_hint_class_name">Class Name</string>
+    <string name="add_student_hint_class_timing">Classs Timing</string>
+    <string name="add_student_hint_father_name">Father Name</string>
+    <string name="add_student_hint_father_aadhar">Father Aadhar Number</string>
+    <string name="add_student_hint_father_contact_number">Father Contact Number</string>
+    <string name="add_student_hint_father_qualification">Father Qualification</string>
+    <string name="add_student_hint_father_income">Father Income</string>
+    <string name="add_student_hint_mother_name">Mother Name</string>
+    <string name="add_student_hint_mother_aadhar">Mother Aadhar Number</string>
+    <string name="add_student_hint_mother_contact_no">Mother Cotact Number</string>
+    <string name="add_student_hint_mother_qualification">Mother Qualification</string>
+    <string name="add_student_hint_mother_income">Mother Income</string>
+    <string name="add_student_hint_guardian_name">Guardian Name</string>
+    <string name="add_student_hint_guardian_aadhar">Guardian Aadhar Number</string>
+    <string name="add_student_hint_guardian_contact_no">Guardian Contact Number</string>
+    <string name="add_student_hint_guardian_qualification">Guardian Qualification</string>
+    <string name="add_student_hint_guardian_income">Guardian Income</string>
+    <string name="add_student_hint_dob">Date of Birth</string>
+    <string name="add_student_hint_contact_no">Contact Number</string>
+    <string name="add_student_hint_email">Email Address</string>
+    <string name="add_student_hint_present_address">Present Address</string>
+    <string name="add_student_hint_gender">Gender</string>
+    <string name="add_student_hint_aadhar_no">Aadhar Number</string>
+    <string name="add_student_hint_blood_group">Blood Group</string>
+    <string name="add_student_hint_religion">Religion</string>
+    <string name="add_student_hint_caste">Caste</string>
+    <string name="add_student_hint_mother_tongue">Mother Tongue</string>
+    <string name="add_student_hint_admission_category">Admission Category</string>
+    <string name="add_student_hint_fee_category">Fee Category</string>
+    <string name="add_student_hint_remarks">Remarks</string>
+    <string name="add_assignment_input_hint_subject_name">Subject Name</string>
+    <string-array name="add_assignment_spinner_classes">
+        <item>Class Name</item>
+        <item>Class1</item>
+        <item>Class2</item>
+        <item>Class3</item>
+    </string-array>
+    <string-array name="add_assignments_spinner_class_teachers">
+        <item>Class Teacher</item>
+        <item>Class Teacher2</item>
+        <item>Class Teacher3</item>
+    </string-array>
+
+
+</resources>

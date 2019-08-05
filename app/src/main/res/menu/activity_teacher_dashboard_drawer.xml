@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/teacher_nav_home"
+            android:orderInCategory="100"
+            android:title="Home"
+            android:icon="@drawable/home_side_menu_icon"/>
+
+        <item
+            android:id="@+id/teacher_nav_menu_students"
+            android:orderInCategory="100"
+            android:title="Students"
+            android:icon="@drawable/stdents_list_side_menu_icon"/>
+
+        <item
+            android:id="@+id/teacher_nav_menu_class_routines"
+            android:orderInCategory="100"
+            android:title="Class Routines"
+            android:icon="@drawable/admin_nav_menu_class_rouines" />
+        <item
+            android:id="@+id/teacher_nav_menu_attendance"
+            android:orderInCategory="100"
+            android:title="Attendance"
+            android:icon="@drawable/admin_nav_menu_attendance" />
+        <item
+            android:id="@+id/teacher_nav_menu_assignments"
+            android:orderInCategory="100"
+            android:title="Assignmennts"
+            android:icon="@drawable/assignments_side_menu_icon"/>
+        <item
+            android:id="@+id/teacher_nav_menu_activity_gallery"
+            android:orderInCategory="100"
+            android:title="Activity Gallery"
+            android:icon="@drawable/admin_nav_menu_activity_gallery" />
+        <item
+            android:id="@+id/teacher_nav_menu_messages"
+            android:orderInCategory="100"
+            android:title="Messages"
+            android:icon="@drawable/admin_nav_menu_messages" />
+        <item
+            android:id="@+id/teacher_nav_menu_leaves"
+            android:orderInCategory="100"
+            android:title="Leaves"
+            android:icon="@drawable/admin_nav_menu_leaves" />
+        <item
+            android:id="@+id/teacher_nav_menu_permissions"
+            android:orderInCategory="100"
+            android:title="Permissions"
+            android:icon="@drawable/admin_nav_menu_permissions"/>
+
+
+        <!--<item-->
+        <!--android:id="@+id/admin_nav_menu_student_fee"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Student Fee"-->
+        <!--android:icon="@drawable/admin_nav_menu_student_fee" />-->
+
+        <!--<item-->
+        <!--android:id="@+id/admin_nav_menu_results"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Results"-->
+        <!--android:icon="@drawable/admin_nav_menu_results" />-->
+
+        <item
+            android:id="@+id/teacher_nav_menu_logut"
+            android:orderInCategory="100"
+            android:title="Logout"
+            android:icon="@drawable/admin_nav_menu_logout"/>
+    </group>
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="@string/menu_share" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

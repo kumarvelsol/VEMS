@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">@android:color/holo_orange_dark</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="orange">@android:color/holo_orange_dark</color>
+    <color name="orange_dark">#FF5300</color>
+    <color name="orange_light">#FD8F59</color>
+    <color name="transperant">#66E4C9C9</color>
+
+    <color name="teachers_backgrund_color1">#F2807F</color>
+    <color name="techers_background_color2">#FFE1A8</color>
+
+    <color name="dark_graient_blue">#12BABA</color>
+    <color name="light_gradient_blue">#12BABA</color>
+
+    <color name="dark_purple_color">#663CB5</color>
+    <color name="light_purple_color">#D9C6FC</color>
+
+    <color name="dark_sky_blue">#3D8AF4</color>
+    <color name="light_sky_blue">#BAE0FF</color>
+
+    <color name="dark_blue">#3E5FDB</color>
+    <color name="light_blue">#BCD5FF</color>
+
+    <color name="dark_green_color">#009A3D</color>
+    <color name="light_green_color">#BEFCD7</color>
+
+    <color name="dark_pink_color">#EE4093</color>
+    <color name="light_pink_color">#FFB2D7</color>
+
+    <color name="dark_gradient_color">#1D89AD</color>
+    <color name="light_gradient_color">#C3F4FD</color>
+
+    <color name="dark_gray_color">#5A678D</color>
+    <color name="light_gray_color">#D8E5FF</color>
+
+    <color name="light_brown">#82524F</color>
+    <color name="dark_brown">#9C6E6C</color>
+
+    <color name="toolbarTransparent">#00FFFFFF</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_teacher_full_name_hint">Full Name</string>
+    <string name="add_teacher_input_designation_hint">Designation</string>
+    <string name="add_teacher_academic_qualification_hint">Academic Qualification</string>
+    <string name="add_teacher_professional_qualification_hint">Professional Qualification</string>
+    <string name="add_teacher_academic_mobile_hint">Mobile Number</string>
+    <string name="add_teacher_academic_aleternate_no_hint">Alternative Mobile</string>
+    <string name="add_teacher_landline_hint">LandLine Number</string>
+    <string name="add_teacher_email_hint">Email</string>
+    <string name="add_teacher_gender_hint"></string>
+    <string name="add_teacher_dob_hint">Date Of Birth</string>
+    <string name="add_teacher_present_address_hint">Present Address</string>
+    <string name="add_teacher_permenant_address_hint">Permenant Address</string>
+    <string name="add_teacher_doj_hint">Date of Joining</string>
+    <string name="add_teacher_basic_salary_hint">Basic Salary</string>
+    <string name="add_teacher_bank_name_hint">Bank Name</string>
+    <string name="add_teacher_banck_account_no_hint">Bank Account Number</string>
+    <string name="add_teacher_aadhar_hint">Aadhar</string>
+    <string name="add_teacher_blood_group_hint">Blood Group</string>
+    <string name="add_student_full_name_hint">Full Name</string>
+    <string-array name="teacher_categories">
+        <item>PPT</item>
+        <item>PRT</item>
+        <item>TGT</item>
+    </string-array>
+    <string-array name="teacher_category_2">
+        <item>Trained</item>
+        <item>Untrained </item>
+    </string-array>
+    <string-array name="gender_category">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+</resources>

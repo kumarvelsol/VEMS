@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/students_list_backgroun"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.adminfragments.AddTeacherFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Student"
+                android:textColor="#12BABA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/ten_dp"
+                android:fontFamily="@font/roboto"/>
+
+            <params.com.stepview.StatusViewScroller
+                android:id="@+id/add_teacher_step_count_status_view_controller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:stepCount="3"
+                app:currentCount="1"
+                app:drawLabels="true"
+                android:layout_margin="@dimen/ten_dp"
+                app:circleColorType="fillStroke"
+                app:lineGap="5dp"
+                android:layout_gravity="right"
+                app:lineWidth="3dp"
+                app:lineColorIncomplete="#12BABA"
+                app:lineColorCurrent="#12BABA"
+                app:circleColor="#12BABA"
+                app:circleColorCurrent="#12BABA"
+                app:circleColorIncomplete="@color/white"
+                app:textColorLabels="#12BABA"
+                app:textColorLabelsCurrent="@android:color/white"
+                app:circleStrokeWidth="4dp"
+                app:circleStrokeColorCurrent="#12BABA"
+                app:textSizeLabels="15sp" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/five_dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/five_dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/add_student_first_step_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_full_name"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/name_icon"
+                            android:hint="@string/add_student_full_name_hint"
+                            android:inputType="textPersonName|textCapWords" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_doj"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/doj_icon"
+                            android:hint="@string/add_student_hint_doj"
+                            android:inputType="date" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/stream_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_streams"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_streams"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/session_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_sessions"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_hint_session"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_admission_no"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/adminssion_no_icon"
+                            android:hint="@string/add_student_hint_admissionNo"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_roll_no"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/doj_icon"
+                            android:hint="@string/add_student_hint_roll_no"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/class_name_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_class_names"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_class_names"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/class_timing_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_class_timings"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_class_timing"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_father_name"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/father_name_icon"
+                            android:hint="@string/add_student_hint_father_name"
+                            android:inputType="textPersonName|textCapWords" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_father_aadhar"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/aadhar_icon"
+                            android:hint="@string/add_student_hint_father_aadhar"
+                            android:inputType="number"
+                            android:maxLength="12"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_father_mobile"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mobile_icon"
+                            android:hint="@string/add_student_hint_father_contact_number"
+                            android:inputType="phone"
+                            android:maxLength="10"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_father_qly"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/qualification_icon"
+                            android:hint="@string/add_student_hint_father_qualification"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_father_income"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/basic_salary_icon"
+                            android:hint="@string/add_student_hint_father_income"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:id="@+id/first_layout_next_btn"
+                        style="@style/add_student_screen_btn_style"
+                        android:layout_gravity="right"
+                        android:text="Next" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/add_student_second_step_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_name"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mother_name_icon"
+                            android:hint="@string/add_student_hint_mother_name"
+                            android:inputType="textPersonName|textCapWords" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_aadhar"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/aadhar_icon"
+                            android:hint="@string/add_student_hint_mother_aadhar"
+                            android:inputType="number"
+                            android:maxLength="12"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_contact_no"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mobile_icon"
+                            android:hint="@string/add_student_hint_mother_contact_no"
+                            android:inputType="phone"
+                            android:maxLength="10"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_qly"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/qualification_icon"
+                            android:hint="@string/add_student_hint_mother_qualification"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_income"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/basic_salary_icon"
+                            android:hint="@string/add_student_hint_mother_income"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_guadian_name"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/guardian_name_icon"
+                            android:hint="@string/add_student_hint_guardian_name"
+                            android:inputType="textPersonName" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_guardian_aadhar"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/aadhar_icon"
+                            android:hint="@string/add_student_hint_guardian_aadhar"
+                            android:inputType="number"
+                            android:maxLength="12"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_guardian_contact"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mobile_icon"
+                            android:hint="@string/add_student_hint_guardian_contact_no"
+                            android:inputType="phone"
+                            android:maxLength="10"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_guardian_qly"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/qualification_icon"
+                            android:hint="@string/add_student_hint_guardian_qualification"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_guardian_income"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/basic_salary_icon"
+                            android:hint="@string/add_student_hint_guardian_income"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_dob"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/dob_icon"
+                            android:hint="@string/add_student_hint_dob"
+                            android:inputType="date" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_contact_no"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mobile_icon"
+                            android:hint="@string/add_student_hint_contact_no"
+                            android:inputType="phone"
+                            android:maxLength="10"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_email"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/email_icon"
+                            android:hint="@string/add_student_hint_email"
+                            android:inputType="textEmailAddress" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:id="@+id/second_layout_next_btn"
+                        style="@style/add_student_screen_btn_style"
+                        android:layout_gravity="right"
+                        android:text="Next" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/add_student_third_step_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style"
+                        android:layout_height="100dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_address"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/address_icon"
+                            android:hint="@string/add_student_hint_present_address"
+                            android:maxLines="3"
+                            android:layout_height="match_parent"
+                            android:inputType="textPostalAddress" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/gender_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_gender"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_gender"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_aadhar_icon"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/aadhar_icon"
+                            android:hint="@string/add_student_hint_aadhar_no"
+                            android:inputType="number"
+                            android:maxLength="12"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/blood_group_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_blood_group"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/student_blood_group"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/blood_group_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_religion"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/student_religion"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/caste_religion_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_caste"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/student_caste"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_mother_tongue"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/mother_tongue_icon"
+                            android:hint="@string/add_student_hint_mother_tongue"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/admission_category_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_admission_category"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_admission"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#1B606060"
+                        android:layout_margin="@dimen/five_dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"
+                            android:layout_margin="@dimen/five_dp"
+                            android:src="@drawable/fee_category_icon"/>
+
+                        <Spinner
+                            android:id="@+id/add_student_spinner_fee_category"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/five_dp"
+                            android:entries="@array/add_student_fee_categories"
+                            android:layout_weight=".85"
+                            android:background="@drawable/add_teacher_spinner_shape" />
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/add_student_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/add_student_input_reamrks"
+                            style="@style/add_student_input_style"
+                            android:drawableStart="@drawable/reamrks_icon"
+                            android:hint="@string/add_student_hint_remarks"
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/third_layout_submit_btn"
+                        style="@style/add_student_screen_btn_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Submit" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
